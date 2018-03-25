@@ -1,0 +1,23 @@
+program counter out to bus and into mem register       
+output mem contents and put in instruction register
+increment program counter
+
+All instrcuctions have first 2 microcodes of the following:
+
+000 CO | MI         01000000 00000100	0x4004	0b0100000000000100
+001 RO | II | CE    00010100 00001000	0x1210	0b0001010000001000
+
+*note i had to make the instruction counter (not PC) count on negative edge
+to avoid double counting the PC in this part of the instruction
+
+NOP 0x0 (0b0000)
+
+010->111 0x0
+
+LDA 0x1 (0b0001)
+
+010 IO | MI			01001000 00000000	0x4800	0b0100100000000000
+011 RO | AI			00010010 00000000	0x1200
+100->111 0x0
+
+ADD 0x2		
