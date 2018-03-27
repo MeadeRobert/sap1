@@ -16,7 +16,7 @@ CO = 1 << 10
 J = 1 << 9
 JC = 1 << 8
 
-file = open("instruction_rom.txt", "w+")
+file = open("instruction_rom.rom", "w+")
 file.write("v2.0 raw\n")
 instructions = []
 
@@ -68,7 +68,6 @@ instructions[0xf][2] = HLT
 for instr in instructions:
 	file.write(" ".join(['{:06X}'.format(microcode) for microcode in instr]))
 	file.write(" ")
-print(instructions)
 file.close()
 	
 

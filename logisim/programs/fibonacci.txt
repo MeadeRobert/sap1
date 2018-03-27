@@ -1,0 +1,10 @@
+0: LDI 0x1  // put 1 f(1) into mem
+1: STA 0xf	// store in 0xf
+2: LDI 0x0	// put 0 f(0) into mem
+3: STA 0xe	// store in 0xf
+4: OUT		// output value
+5: ADD 0xf	// compute f(n+1)
+6: STA 0xf	// store result
+7: SUB 0xe	// compute f(n) again by subtraction
+8: STA 0xe	// store result
+9: JMP 4	// repeat

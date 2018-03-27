@@ -1,4 +1,4 @@
-file = open("display_rom.txt", "w+")
+file = open("display_rom.rom", "w+")
 file.write("v2.0 raw\n")
 
 # value for hex digits 0-F in hex for display outputs

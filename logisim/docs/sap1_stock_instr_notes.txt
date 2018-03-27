@@ -10,14 +10,15 @@ All instrcuctions have first 2 microcodes of the following:
 *note i had to make the instruction counter (not PC) count on negative edge
 to avoid double counting the PC in this part of the instruction
 
-NOP 0x0 (0b0000)
+# NOP-0x0 ()
+# LDA-0x1 (IO|MI, RO|AI)
+# ADD-0x2 (IO|MI, RO|BI, EO|AI)
+# SUB-0x3 (IO|MI, RO|BI, EO|AI)
+# STA-0x4 (IO|MI, AO|RI)
+# LDI-0x5 (IO|AI)
+# JMP-0x6 (IO|J)
+# JC-0x7 (IO|JC)
+# OUT-0xE (AO|OI)
+# HLT-0xF (HLT)
 
-010->111 0x0
-
-LDA 0x1 (0b0001)
-
-010 IO | MI			01001000 00000000	0x4800	0b0100100000000000
-011 RO | AI			00010010 00000000	0x1200
-100->111 0x0
-
-ADD 0x2		
+*see python program for rom generation for control word bits
