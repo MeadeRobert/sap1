@@ -1,0 +1,24 @@
+program counter out to bus and into mem register       
+output mem contents and put in instruction register
+increment program counter
+
+All instrcuctions have first 2 microcodes of the following:
+
+000 CO | MI         01000000 00000100	0x4004	0b0100000000000100
+001 RO | II | CE    00010100 00001000	0x1210	0b0001010000001000
+
+*note i had to make the instruction counter (not PC) count on negative edge
+to avoid double counting the PC in this part of the instruction
+
+# NOP-0x0 ()
+# LDA-0x1 (IO|MI, RO|AI)
+# ADD-0x2 (IO|MI, RO|BI, EO|AI)
+# SUB-0x3 (IO|MI, RO|BI, EO|AI)
+# STA-0x4 (IO|MI, AO|RI)
+# LDI-0x5 (IO|AI)
+# JMP-0x6 (IO|J)
+# JC-0x7 (IO|JC)
+# OUT-0xE (AO|OI)
+# HLT-0xF (HLT)
+
+*see python program for rom generation for control word bits

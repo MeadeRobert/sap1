@@ -1,0 +1,19 @@
+instructions
+0: LDA F   (0x1f)    // load 2nd arg into mem
+1: SUB C  (0x3c)   // decrement 2nd arg by 1
+2: STA F   (0x4f)   // put result back in location of 2nd arg
+3: JC 8     (0x78)   // if less than zero, jump to output instructions
+4: LDA D  (0x1d)   // load result 
+5: ADD E  (0x2e)   // add first arg
+6: STA D  (0x4d)   // store result
+7: JMP 0 (0x60)   // repeat until result = arg1 * arg2
+8: LDA D  (0x1d)  // load result
+9: OUT     (0xe0)  // output result
+A: HLT      (0xf0)  // end execution
+B: NOP    (0x00)
+
+data
+C: 01                        // constant used for fast subtraction of 1 from 2nd argument
+D: 00                        // result; must be manually set to zero
+E: 03                        // first argument for multiplication
+F: 05                        // 2nd argument for multiplication (will be overwritten by program)
