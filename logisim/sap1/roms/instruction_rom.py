@@ -37,12 +37,11 @@ for i in range(0, 256):
 		instr.append(000000)
 	instructions.append(instr)
 		
+# NOP-0x00 ()
 		
 # memory operations
 #################################################
 		
-# NOP-0x00 ()
-
 # LDA-0x01 (IO|MI, RO|AI)
 instructions[1][2] = MI + CO
 instructions[1][3] = MI + RO
@@ -62,7 +61,7 @@ instructions[0x2][4] = TR
 # STA-0x03
 instructions[0x3][2] = MI + CO
 instructions[0x3][3] = MI + RO
-instructions[0x3][5] = RO + AI + CE
+instructions[0x3][5] = RI + AO + CE
 instructions[0x3][6] = TR
 
 # arithmetic operators
@@ -81,7 +80,7 @@ for i in range(0, 0xe):
 	instructions[0x21+i][3] = EO + AI + FI
 	instructions[0x21+i][4] = TR
 
-# ADDN-0x29
+# ADDN-0x2f
 instructions[0x2f][2] = MI + CO
 instructions[0x2f][3] = RO + BI
 instructions[0x2f][4] = EO + AI + CE + FI
@@ -142,7 +141,6 @@ instructions[0x44][2] = MI + CO
 instructions[0x44][3] = RO + BI
 instructions[0x44][4] = AI + L1 + CE + FI
 instructions[0x44][5] = TR
-
 
 # XOR- 0x45
 instructions[0x45][2] = MI + CO
