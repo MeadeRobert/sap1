@@ -1,4 +1,4 @@
-# sap1
+# 8 Bit Breadboard Computer (SAP-1)
 The Model and Software Supporting my implementations of the SAP-1 Computer Architecture as inspired by Ben Eater in both logisim and TTL hardware logic.
 
 Hardware Design:
