@@ -1,4 +1,4 @@
-#8-Bit Computer Assembly RMX (Robert Meade Assembly) version H0.1 (Hardware 0.1)
+# 8-Bit Computer Assembly RMX (Robert Meade Assembly) version H0.1 (Hardware 0.1)
 
 ### Misc Instructions
 **NOP (0x00)**- No operation, wait 8 T-states and then fetch next instruction
