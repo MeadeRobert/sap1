@@ -200,7 +200,7 @@ instructions[0x60][2] = MI + CO
 instructions[0x60][3] = RO + J + CE
 instructions[0x60][4] = TR
 
-# JLZ-0x61 (IO|JLZ)
+# JLZ-0x61
 instructions[0x61][2] = MI + CO
 instructions[0x61][3] = RO + JLZ + CE
 instructions[0x61][4] = TR
@@ -318,10 +318,6 @@ instructions[0xe1][3] = TR
 # SP_OUT-0xe2 
 instructions[0xe2][2] = SPO + OI
 instructions[0xe2][3] = TR
-
-# I_OUT-0xe3
-instructions[0xe3][2] = IO + OI
-instructions[0xe3][3] = TR
 
 # OUT-0x0d
 instructions[0x0d][2] = MI + CO

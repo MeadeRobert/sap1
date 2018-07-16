@@ -1,0 +1,22 @@
+0x00: LDAI 1 (0x11)			// load 1 into A to put in 1st var
+0x01: STA (0x03)			// put that value 1 into 1st var
+0x02: 0x80
+0x03: LDAI 0 (0x10)			// load 0 into A to put in 2nd var
+0x04: STA (0x03)			// put that value 0 into 2nd var
+0x05: 0x81
+0x06: A_OUT (0xe0)			// output to display
+0x07: ADD (0x20)			// add value to generate next fibonacci number
+0x08: 0x80
+0x09: STA (0x03)			// save the new number in 1st var
+0x0a: 0x80
+0x0b: SUB (0x30)			// recompute the previous number
+0x0c: 0x81
+0x0d: STA (0x03)			// store previous number in 2nd var
+0x0e: 0x81
+0x0f: JLZ (0x61)			// restart program if previous value (value that gets output) is < 0
+0x10: 0x00
+0x11: JMP (0x60)			// otherwise, output the value and continue
+0x12: 0x06
+
+0x80: # current fibonacci number
+0x81: # previous fibonacci number
