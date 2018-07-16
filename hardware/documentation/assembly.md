@@ -1,13 +1,13 @@
 # 8-Bit Computer Assembly RMX (Robert Meade Assembly) version H0.1 (Hardware 0.1)
 
-### Misc Instructions
+## Misc Instructions
 
 **NOP (0x00)**- No operation, wait 8 T-states and then fetch next instruction
 *note: instructions bytes not used are programmed as NOP instructions*
 
 **HLT (0xff)**- Halt; Halt and Catch Fire (HCF)
 
-### Basic Memory Operations
+## Basic Memory Operations
 
 **LDA (0x01)**- Load A; puts value in memory location specified by next byte into the A register
 
@@ -17,7 +17,7 @@
 
 **STA (0x03)**- Store A; stores the value in the A register in the memory location specified by the next byte in memory
 
-### Addition/Subtraction
+## Addition/Subtraction
 
 **ADD (0x20)**- Add; adds the value at the location in memory specified by the next byte and updates flags accordingly
 
@@ -31,7 +31,7 @@
 
 **SUBN (0x3f)**- Subtract Next; subtracts the value contained in the next byte of memory to the A register and updates flags accordingly
 
-### Logical Operators
+## Logical Operators
 
 **NOT (0x40)**- Logical Not (bitwise); applies the bitwise NOT operator to the contents of the A register, places the result in the A register, and updates flags accordingly
 
@@ -47,7 +47,7 @@
 
 **XORN (0x46)**-  Logical XOR Next (bitwise); applies the bitwise XOR operator to the contents of the A register and the value held in the next byte of memory, puts the result in the A register, and updates the flags accordingly
 
-### Bit Shifts and Rotates
+## Bit Shifts and Rotates
 
 **SHL (0x47)**- Shift Left- shifts the contents of the A register 1 bit to the left and updates flags accordingly (limitation: carry not calculated from operation)
 
@@ -61,7 +61,7 @@
 
 **SAR (0x4c)**- Arithmetic Shift Right- shifts the contents of the A register 1 bit to the right, preserving the sign bit, and updates flags accordingly (limitation: carry not calculated from operation)
 
-### Jump Instructions
+## Jump Instructions
 
 **JMP (0x60)**- Jump Unconditionally- Performs an unconditional jump to the location in memory specified by the next byte in memory
 
@@ -77,7 +77,7 @@
 
 **JNZ (0x64)**- Jump Not Zero- Performs a jump to the location in memory specified by the next byte in memory if the zero flag is not set
 
-### Comparison Instructions
+## Comparison Instructions
 
 **CMP (0x07)**- Compare; Updates flags based on the result of subtraction between the value in the A register and the value in the memory location specified by the next bytes in memory without updating the contents of the A register
 
@@ -87,7 +87,7 @@
 
 **CMP_NLD (0xf1)** Compare No Load; Updates the flags based on the result of subtraction between the value in the B register and the value in the A register without altering the contents of the A register
 
-### Stack Operations
+## Stack Operations
 
 **LSP (0x80)**- Load Stack Pointer; initializes the location of the stack in memory to an arbitrary value stored in the memory location referred to by the next byte in memory
 
@@ -103,7 +103,7 @@
 
 **RET (0x91)** Return (return from a function/subroutine); picks the top value off the stack and begins execution there
 
-### Output Instructions
+## Output Instructions
 
 **A_OUT (0xe0)**- Output A; puts the contents of the A register into the output register
 
