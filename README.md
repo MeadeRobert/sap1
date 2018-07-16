@@ -10,7 +10,7 @@ The Model and Software Supporting my implementations of the SAP-1 Computer Archi
 ### [Youtube Design Overview Video](https://www.youtube.com/watch?v=9Msc9BiX_9E)
 
 ## 8-Bit Computer Assembly RMX (Robert Meade Assembly)
-### [version H0.1 (Hardware 0.1)](https://github.com/MeadeRobert/sap1/blob/master/hardware/documentation/assembly.md) - Currently Running on the Hardware Implementation
+### [Version H0.1 (Hardware 0.1)](https://github.com/MeadeRobert/sap1/blob/master/hardware/documentation/assembly.md) - Currently Running on the Hardware Implementation
 
 ## Current Logisim Design:
 ![https://github.com/MeadeRobert/sap1/blob/master/images/sar_test_0.PNG](https://github.com/MeadeRobert/sap1/blob/master/images/sar_test_0.PNG)
