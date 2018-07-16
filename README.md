@@ -1,12 +1,8 @@
 # 8 Bit Breadboard Computer (SAP-1)
 The Model and Software Supporting my implementations of the SAP-1 Computer Architecture as inspired by Ben Eater in both logisim and TTL hardware logic.
 
-
-
 ## Hardware Design:
-
 ![https://github.com/MeadeRobert/sap1/blob/master/images/hardware.jpg](https://github.com/MeadeRobert/sap1/blob/master/images/hardware.jpg)
-
 ### [Youtube Design Overview Video](https://www.youtube.com/watch?v=9Msc9BiX_9E)
 
 ## 8-Bit Computer Assembly RMX (Robert Meade Assembly)
