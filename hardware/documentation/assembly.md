@@ -49,17 +49,17 @@
 
 ## Bit Shifts and Rotates
 
-**SHL (0x47)**- Shift Left- shifts the contents of the A register 1 bit to the left and updates flags accordingly (limitation: carry not calculated from operation)
+**SHL (0x47)**- Shift Left- shifts the contents of the A register 1 bit to the left and updates flags accordingly
 
-**SHR (0x48)**- Shift Right- shifts the contents of the A register 1 bit to the right and updates flags accordingly (limitation: carry not calculated from operation)
+**SHR (0x48)**- Shift Right- shifts the contents of the A register 1 bit to the right and updates flags accordingly
 
-**ROL (0x49)**- Rotate Left- rotates the contents of the A register 1 bit to the left and updates flags accordingly (limitation: carry not calculated from operation)
+**ROL (0x49)**- Rotate Left- rotates the contents of the A register 1 bit to the left and updates flags accordingly
 
-**ROR (0x4a)**- Rotate right- rotates the contents of the A register 1 bit to the right and updates flags accordingly (limitation: carry not calculated from operation)
+**ROR (0x4a)**- Rotate right- rotates the contents of the A register 1 bit to the right and updates flags accordingly
 
-**SAL (0x4b)**- Arithmetic Shift Left- shifts the contents of the A register 1 bit to the left and updates flags accordingly (limitation: carry not calculated from operation)
+**SAL (0x4b)**- Arithmetic Shift Left- shifts the contents of the A register 1 bit to the left and updates flags accordingly
 
-**SAR (0x4c)**- Arithmetic Shift Right- shifts the contents of the A register 1 bit to the right, preserving the sign bit, and updates flags accordingly (limitation: carry not calculated from operation)
+**SAR (0x4c)**- Arithmetic Shift Right- shifts the contents of the A register 1 bit to the right, preserving the sign bit, and updates flags accordingly
 
 ## Jump Instructions
 
