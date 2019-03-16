@@ -238,6 +238,7 @@ instructions[0x07][2] = MI + CO
 instructions[0x07][3] = MI + RO
 instructions[0x07][4] = RO + BI
 instructions[0x07][5] = EO + S2 + S1 + CE + FI # S2,S1 -> S=0110, Cn=0, M=0 -> 74ls181 A minus B
+instructions[0x07][6] = TR
 
 # CMPI-0x70->0x7e
 for i in range(0, 0xe):
