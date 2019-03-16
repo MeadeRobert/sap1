@@ -109,7 +109,7 @@
 
 **B_OUT (0xe1)**- Output B; puts the contents of the B register into the output register
 
-**SP_OUT (0xe1)**- Output SP; puts the contents of the stack pointer (SP) register into the output register
+**SP_OUT (0xe2)**- Output SP; puts the contents of the stack pointer (SP) register into the output register
 
 **OUT (0x0d)**- Output; puts the value at the location in memory specified by the next byte in memory into the output register
 
